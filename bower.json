@@ -1,0 +1,23 @@
+{
+  "name": "odinapp",
+  "authors": [
+    "Ramesh Rathod"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.5",
+    "angular-ui-router": "^1.0.6",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
