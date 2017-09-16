@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html ng-app="">
+<html ng-app="myApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Dashboard</title>
+  <base href="/">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -38,50 +39,12 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
-<div class="wrapper">
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse login-page">
+   <div ui-view>
+<!--          <div ng-include="'app/templates/dashboard.html'"></div>-->
+  </div>        
+    
 
-  <header class="main-header">
-      <div ng-include="'app/templates/header.html'"></div>
-
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-       <div ng-include="'app/templates/sidebar.html'"></div>
-
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
-      
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-     
-      
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-       <div ng-include="'app/templates/footer.html'"></div>
-  </footer>
-
- 
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
-<!--    Angular-->
 
 
 <script src="bower_components/angular/angular.js"></script>
@@ -90,6 +53,19 @@
 <script src="bower_components/angular-animate/angular-animate.min.js"></script>
 <script src="bower_components/angular-aria/angular-aria.min.js"></script>
 <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+
+<!--    App Modules-->
+<script src="app/app.js"></script>
+
+<script src="app/login/login.js"></script>
+<script src="app/login/login-controller.js"></script>
+<script src="app/login/login-service.js"></script>
+
+<script src="app/dashboard/dashboard.js"></script>
+<script src="app/dashboard/dashboard-controller.js"></script>
+<script src="app/dashboard/dashboard-service.js"></script>
+  
+   
 
 
 

@@ -1,0 +1,38 @@
+<section ng-controller="loginCtrl">
+    <div class="login-box">
+        <div class="login-logo"> 
+            <a><b>Admin</b>LTE</a> 
+        </div>
+        <!-- /.login-logo -->
+        <div class="login-box-body">
+          <br>
+           <br>
+            <form>
+                <div class="form-group has-feedback">
+                    <input type="email" class="form-control" placeholder="Email"> <span class="glyphicon glyphicon-envelope form-control-feedback"></span> 
+                </div>
+                    <br>
+                    
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" placeholder="Password"> <span class="glyphicon glyphicon-lock form-control-feedback"></span> 
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="checkbox icheck">
+                            <label>
+                                <input type="checkbox"> Remember Me </label>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!-- /.col -->
+                    <div class="col-xs-4">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat" ng-click="login()">Sign In</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+        </div>
+        <!-- /.login-box-body -->
+    </div>
+</section>
